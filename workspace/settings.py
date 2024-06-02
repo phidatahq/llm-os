@@ -15,14 +15,14 @@ ws_settings = WorkspaceSettings(
     dev_env="dev",
     # -*- Dev Apps
     dev_app_enabled=True,
-    dev_api_enabled=True,
     dev_db_enabled=True,
+    # dev_api_enabled=True,
     # -*- Production settings
     prd_env="prd",
     # -*- Production Apps
     prd_app_enabled=True,
-    prd_api_enabled=True,
     prd_db_enabled=True,
+    # prd_api_enabled=True,
     # -*- AWS settings
     # Region for AWS resources
     aws_region="us-east-1",

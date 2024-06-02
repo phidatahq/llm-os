@@ -35,7 +35,7 @@ with st.expander(":rainbow[:point_down: How to use]"):
 
 def main() -> None:
     # Get username
-    user_id = "ab"  # get_username_sidebar()
+    user_id = get_username_sidebar()
     if user_id:
         st.sidebar.info(f":technologist: User: {user_id}")
     else:
