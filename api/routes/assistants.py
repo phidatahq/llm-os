@@ -26,7 +26,16 @@ def get_assistant(
     """Return the assistant"""
 
     if assistant_type == "LLM_OS":
-        return get_llm_os(run_id=run_id, user_id=user_id)
+        return get_llm_os(
+            calculator=True,
+            ddg_search=True,
+            file_tools=True,
+            finance_tools=True,
+            python_assistant=True,
+            research_assistant=True,
+            run_id=run_id,
+            user_id=user_id
+        )
 
 
 class LoadKnowledgeBaseRequest(BaseModel):
