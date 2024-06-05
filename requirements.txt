@@ -63,7 +63,7 @@ packaging==24.0
 pandas==2.2.2
 peewee==3.17.5
 pgvector==0.2.5
-phidata[aws]==2.4.16
+phidata[aws]==2.4.18
 pillow==10.3.0
 platformdirs==4.2.2
 protobuf==4.25.3
