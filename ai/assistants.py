@@ -6,8 +6,6 @@ from phi.assistant.python import PythonAssistant
 from phi.embedder.openai import OpenAIEmbedder
 from phi.knowledge import AssistantKnowledge
 from phi.llm.openai import OpenAIChat
-from phi.memory import AssistantMemory
-from phi.memory.db.postgres import PgMemoryDb
 from phi.storage.assistant.postgres import PgAssistantStorage
 from phi.tools import Toolkit
 from phi.tools.calculator import Calculator
@@ -148,12 +146,6 @@ def get_llm_os(
         name="LLM OS",
         run_id=run_id,
         user_id=user_id,
-        # Add personalization to the assistant by creating memories
-        create_memories=True,
-        # Update memory after each run
-        update_memory_after_run=True,
-        # Store the memories in a database
-        memory=AssistantMemory(db=PgMemoryDb(table_name="llm_os_memory", db_url=db_url)),
         # Store runs in a database
         storage=PgAssistantStorage(table_name="llm_os_storage", db_url=db_url),
         # Store knowledge in a vector database
