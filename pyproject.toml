@@ -38,7 +38,7 @@ dependencies = [
   # Linting and Formatting
   "ruff",
   # phidata
-  "phidata[aws]==2.4.18",
+  "phidata[aws]==2.4.21",
 ]
 
 [build-system]
